@@ -1,0 +1,1166 @@
+* {
+    /* font-family: 'Noto Sans TC', sans-serif; */
+    color: rgb(85, 67, 67);
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+body {
+    background: url(image/bg.png)fixed;
+    background-size: cover;
+    padding-top: 60px;
+}
+
+
+.changeBg{
+
+    background-color: #F7F3F0;
+}
+
+
+.Walk{
+    position: absolute;
+    right:20px;
+    top: 100px;
+   
+}
+
+
+.Walk img{
+    width:150px
+}
+
+
+@media (max-width:1200px) {
+    .Walk{
+        position: absolute;
+        right:20px;
+        top: 100px;
+       
+    }
+
+    .Walk img{
+        width:100px
+    }
+}
+
+
+@media (max-width:700px) {
+    .Walk{
+        display:none;
+    }
+}
+
+
+
+
+h2,h3,h4,h5{
+    font-weight: bold;
+}
+
+/* 標題title */
+
+.title {
+    transition: .8s;
+    margin: 60px 0 30px -30px;
+    padding-top: 10px;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgb(230, 219, 219) 50%,rgba(255,255,255,0) 100%);
+}
+
+.title h2 {
+    font-size: 2.5rem;
+    color: rgb(122, 95, 75);
+    transition: 1s;
+
+}
+
+.title h2 span {
+    width: 5rem;
+    margin-top:-20px;
+}
+
+.title h2 span img{
+    width: 5rem;
+    transform: rotate(50deg);
+}
+
+
+/* .leave{
+    transform: translateX(-200px);
+} */
+
+
+
+
+/* 導覽列 */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* background: rgb(92, 78, 78, 0.95); */
+    z-index: 50;
+}
+
+
+.navbar {
+    background: rgb(92, 78, 78, 0.95);
+    transition: .5s;
+}
+
+.navbar.hide {
+    transform: translateY(-90px);
+}
+
+
+.nav {
+    height: 300px;
+}
+
+
+
+@media (max-width:990px) {
+    .fb-l {
+        display: none;
+    }
+
+    .hero-img-wrap{
+        order: 1;
+    }
+}
+
+@media (min-width:990px) {
+    .fb-s {
+        display: none;
+    }
+}
+
+@media (max-width:499px) {
+    .nav-bar{
+        padding: 0;
+    }
+}
+
+
+  
+
+
+
+
+/* header */
+
+button:focus {
+    outline: none;
+}
+
+
+.navbar{
+    padding-top: 10px;
+    /* justify-content: space-evenly; */
+} 
+
+/* @media (max-width:990px) {
+    .navbar-toggler{
+        justify-self: start;
+    }
+
+   
+    .navbar{
+        justify-content: center;
+    } 
+}  */
+
+
+.nav-sm-btn {
+    border: none;
+}
+
+.nav-sm-btn:checked {
+    outline: transparent;
+
+}
+
+.navbar-brand {
+    width:90px;
+}
+
+.navbar-nav a {
+    list-style: none;
+    color: #000;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 2.25rem;
+    font-weight: 400;
+}
+
+/* .navbar-collapse{
+    /* margin-left: 20%; */
+/* }
+    
+@media (max-width:900px) {
+    .navbar-collapse{
+        margin-left:0%;
+    }
+} */ 
+
+
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #d6e08f;}
+
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+/* hero */
+
+
+
+
+.hero {
+    /* background: url(image/hero/螃蟹濃彩_201004_0.jpg) no-repeat;
+    background-size: cover; */
+    min-height: 900px;
+    overflow: hidden;
+    
+    /* width: 600px;
+    border-radius: 0 0 20px 20px; */
+}
+
+/* .hero-content{
+    background-color: rgba(255, 255, 255, 0.6);
+} */
+
+
+/* 倫波強 */
+
+
+
+.tap {
+    z-index:1 ;
+    top: 0;
+    left:0;
+     right: 0;
+    margin-top: 51px;;
+}
+
+.tap img {
+    height: 730px;
+    width: 580px;
+}
+
+.allHeroWrap{
+    text-align: center;
+}
+.op-wrap {
+    width: 100%;
+    /* overflow: hidden; */
+    /* transform: rotate(-5deg); */
+    padding-top: 90px;
+    
+}
+
+.img-wrap {
+    height: 650px;
+    text-align: center;
+}
+
+.img-wrap li {
+    position: absolute;
+    top: 0;
+    left:0;
+    right: 0;
+
+}
+
+.img-wrap li img {
+    width: 580px;
+    height: 650px;
+    object-fit: cover;
+}
+
+
+.slider-dots {
+    left: 0;
+    right: 0;
+    bottom:-5%;
+    /* width: 100%; */
+}
+
+.slider-dots li {
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+
+@media (max-width:990px) {
+    
+    .hero-img-wrap{
+        order: 1;
+    }
+    .tap {
+      right: 0;
+        left:0;
+    }
+
+    .img-wrap li {
+        right: 0;
+        left:0;
+    
+    }
+
+}
+
+@media (max-width:499px) {
+    
+    .hero-img-wrap{
+        order: 1;
+    }
+
+    .op-wrap {
+        padding-top:10px;
+        
+    }
+    .tap {
+        margin-top:-20px ;
+        left:-30px;
+    }
+
+    .img-wrap li {
+        left:-30px;
+    
+    }
+
+    .fine{
+        width: 0px;
+        height: 0px;
+    }
+    
+    .hero-title{
+margin-top: -40px;
+        }
+
+}
+
+
+
+@media(max-width: 640px){
+
+
+    .hero-img-wrap{
+        transform:scale(.8);}
+
+
+   .loremLg{
+       display: none;
+   }
+
+   svg {
+     width: 10px;
+     height: 10px; 
+ }
+
+}
+
+
+@media( min-width: 640px) and ( max-width: 991px){
+ 
+   .loremLg{
+       display: block;
+   }
+   .loremSm{
+       display: none;
+   }
+
+}
+
+@media( min-width: 992px) and ( max-width: 1629px){
+ 
+ .loremLg{
+     display: none;
+ }
+ .loremSm{
+     display:block;
+ }
+
+}
+
+@media(min-width: 1630px){
+ 
+
+   .loremSm{
+       display: none;
+   }
+
+}
+
+
+
+/* SM */
+
+
+@media (max-width:1500px) {
+
+    .img-wrap {
+        height: 600px;
+    }
+    .img-wrap li img {
+        width: 430px;
+        height: 520px;
+        object-fit: cover;
+    }
+    .tap img {
+        
+        height: 580px;
+        width: 430px;
+    }
+
+    .slider-dots {
+        bottom:-5px;
+        
+    }
+
+}
+
+/* 首頁內容 */
+
+
+
+.hero-title img {
+width: 100%;
+z-index: 2;
+}
+
+.fine{
+    width: 80px;
+    height: 80px;
+}
+
+/* LG */
+.lorem{
+   border: 4px solid rgb(80, 66, 66);
+   border-radius: 20px;
+   margin-top: 20px;
+}
+
+.lorem-title{
+    background-color: #DFD8C9;
+    border-radius: 15px 15px 0 0;
+}
+
+.loremLg .news-item:nth-child(2) {
+    background-color:#DFD8C9;
+    border-radius:  0 0 15px 0;
+}
+
+
+
+.thisWeek {
+    background-color: rgb(80, 66, 66);
+    border-radius:10px 0 0 0 ;
+    /* width:190px; */
+    text-align: center;
+}
+
+.thisWeek p {
+    font-size: 1rem;
+    padding: 5px;
+    line-height: 2rem;
+    color: rgba(255, 255, 255);
+    
+}
+.thisWeek:first-child p{
+    border-bottom: solid 2px #fff;
+    padding: 16px;
+}
+
+.news-title{
+    border-bottom: solid 3px rgb(80, 66, 66);
+}
+
+.news-item div p{
+    padding-left: 10px;
+    border-bottom: solid 1px rgba(107, 100, 100, 0.664);
+}
+
+.news-items{
+    border-bottom: 1px solid #000;
+}
+
+.bg-brown{
+    background-color: rgb(80, 66, 66);
+    border-radius: 0 0 0 10px;
+}
+
+.smR{
+    background-color: rgb(80, 66, 66);
+    border-radius:10px 10px 0 0 ;
+}
+
+
+.loremSm .news-items{
+    background-color:#DFD8C9;
+    border: none;
+    border-radius:0 0 20px 20px;
+}
+
+.arrow{
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/* about */
+
+.about{
+    overflow: hidden;
+}
+
+
+
+
+.class-title {
+    font-size: 1rem;
+}
+
+.class-btn {
+
+    margin-left: 0px;
+    margin-bottom: -5px;
+    /* width: 20%; */
+    border: none;
+    background: rgb(226, 224, 196);
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgb(187, 186, 184);
+    text-shadow:0 1px 2px #acac9a;
+}
+
+.class-btn:hover{
+   color: #ffffff;
+}
+
+
+/* about 內容 */
+
+
+.absplace{
+    top: 0;
+    left: 0;
+}
+
+.about-content {
+    transition: .5s;
+    /* opacity: 0; */
+}
+
+.round{
+    display: inline-block;
+    transform: rotate(-90deg);
+}
+
+
+.about-article-wrap h3{
+    font-weight: 600;
+}
+
+
+.longimg{
+    width: 100%;
+  
+}
+.longimg-wrap{
+    box-shadow:0 -2px 5px rgb(141, 161, 139);
+    margin: 50px -15px -15px 0;
+    
+    /* border-bottom:40px solid #D4DCA4 ; */
+}
+
+
+    
+
+
+.about-content{
+    /* linear-gradient(to bottom, 0%,
+    rgb(244, 247, 227) 50%); */
+    background:rgb(226, 224, 196);
+    
+}
+.about-text{
+    margin-top: 50px;
+    height:250px;
+    line-height: 2rem;
+}
+
+.size{
+    margin-top: 50px;
+}
+
+
+
+@media (max-width:500px) {
+
+ 
+
+    .about-text{
+        margin: 15px -15px -15px 0;
+        height:700px;
+        font-size: 0.7rem;
+        line-height: 1.2rem;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;
+
+    }
+
+    .about-text p{
+      
+        font-size: 0.8rem;
+        
+
+    }
+    
+}
+
+@media (max-width:900px) {
+
+    .llg{
+        display: none;
+    }
+    
+    .lsm{
+        display: block;
+        /* padding: 0; */
+    }
+
+    .about-text{
+        margin: 15px -15px -15px 0;
+        height:300px;
+    }
+    
+    .Walk img{
+        width:100px
+    }
+}
+
+
+@media (min-width:901px) {
+
+    .llg{
+        display: block;
+    }
+    
+    .lsm{
+        display: none;
+    }
+    
+}
+
+
+
+
+/* class */
+
+.class {
+    margin-bottom: 50px;
+}
+
+
+.class-wrap {
+    background: rgb(247, 243, 240, .8);
+    box-shadow: 1px 3px 10px rgb(187, 186, 184);
+    border-radius: 20px;
+    margin: 20px auto;
+    transition: .3s;
+}
+
+.class-wrap h3{
+    font-weight: 700;
+}
+
+.class-wrap p{
+    font-weight: normal;
+}
+
+.more{
+    
+   /* text-shadow:2px 1px 3px #555; */
+    color: rgb(182, 182, 182);
+    font-weight:normal;
+    height: 2rem;
+    padding: 8px 10px 0px 10px;
+    border-radius: 20px;
+    margin-left:50px;
+    font-size: 1rem;
+    
+}
+
+.more-add{
+    color: rgb(182, 182, 182);
+    font-weight:normal;
+    height: 2rem;
+    padding: 8px 10px 0px 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+    margin-left:150px;
+}
+
+
+
+.modal-body {
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+}
+
+.btn-cursor:hover {
+    cursor: pointer;
+    background: rgb(226, 224, 196);
+    transform: translateY(-15px);
+    box-shadow: 1px 10px 20px  rgb(187, 186, 184);
+}
+
+.modal-content{
+    border-radius: 20px;
+}
+
+.modal-body{
+height: 100%;
+
+}
+
+
+.modal-header{
+    border: none;
+}
+
+.modal-footer{
+    border: none;
+}
+
+
+/* 付錢方法 */
+
+.payway{
+    /* linear-gradient(to bottom, rgb(223, 216, 201) 0%,rgba(223, 216, 201,0) 100%) */
+    background:rgb(223, 216, 201) ;
+    padding-top: 40px;
+    padding-bottom: 50px;
+} 
+
+
+.pay p{
+    
+    font-size: .8rem;
+}
+
+
+.hahaha{
+    
+    background-color:#44342D ;
+    height: 2rem;
+    padding: 10px 20px 30px 20px;
+    border-radius: 20px;
+    margin-right: 15px;
+    
+}
+
+.hahaha p{
+    font-weight: bolder;
+    color: #fff;
+}
+
+
+@media (max-width:640px) {
+
+  
+    .payway{
+        padding-bottom:30px;
+        } 
+        
+}
+
+@media (min-width:1200px) {
+
+ 
+
+    .class-items{
+        margin-top: 50px;
+    }
+    
+}
+
+
+
+
+
+
+/* 課表 */
+
+.time-img{
+    text-align: center;}
+
+.time-img img{
+    border-radius: 20px;
+    
+}
+
+
+.smClass{
+    display: none;
+}
+
+.smItem{
+    
+    margin: 0;
+    height: 300px;
+    
+    
+    
+}
+
+.smClassTime{
+    line-height:1.1rem;
+    padding-top: 10px;
+    border:3px solid rgb(114,84,84);
+    border-radius: 0 0 20px 20px;
+    border-top: none;
+    height: 180px;
+    background-color: #F7F3F0;
+    
+    
+}
+
+.smClassTime p{
+    font-size: 0.9rem;
+    margin: 5px 0;
+    
+}
+
+
+
+.calssName{
+    border:3px solid rgb(114,84,84);
+    padding: 20px 20px;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    font-weight: bolder;
+    height: 70px;
+}
+
+.welcome{
+    border-bottom:none;
+}
+
+.bname{
+    background-color: #fff;
+    height: 125px;
+}
+
+.soon{  
+    margin-top: 30px;
+    padding: 15px;
+    border-radius:30px;
+    color: #ffffff ;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: .3s;
+    border: none;
+}
+
+.soon:hover{
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    box-shadow:0 3px 5px rgb(179, 179, 179);
+
+}
+
+.class2020{
+
+    font-size: 1.5rem;
+}
+
+
+.name1{
+    background-color:#F7E8A4 ;
+}
+.name2{
+    background-color: #DCE0C2;
+}
+.name3{
+    background-color: #9BBCC6;
+}
+.name4{
+    background-color: #D8B2BE;
+}
+.name5{
+    background-color: rgb(203,178,214);
+}
+
+
+
+@media (max-width:1200px) {
+
+    .time-img img{
+        width: 800px;
+    }
+    
+ 
+}
+
+@media (max-width:990px) {
+
+    .time-img img{
+        width: 700px;
+    }
+    
+ 
+}
+
+@media (max-width:770px) {
+
+    .time-img {
+    display: none;
+    }
+    .time-content{
+        display: none;
+    }
+    
+    .smClass{
+     display: flex;   
+    }
+
+    .class2020{
+
+        font-size: 1rem;
+    }
+    .soon{  
+        
+        cursor: pointer;
+        font-size: 1.1rem;
+        
+    }
+ 
+}
+@media (max-width:500px) {
+
+    .soon{  
+        
+        cursor: pointer;
+        font-size: 0.8rem;
+        
+    }
+ 
+}
+
+
+
+/* 預約 */
+
+.contact {
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+
+}
+
+.contact-wrap {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow:0px 5px 10px rgb(207, 202, 202);
+}
+
+
+
+form {
+    /* background: #fff; */
+
+    padding: 20px;
+    text-align: center;
+    border: 3px solid rgb(137, 179, 135,.6);
+    border-radius: 10px;
+    margin: 10 px;
+}
+
+
+
+.contact-tb td {
+    padding: 10px;
+    font-weight: bold;
+    color: #555;
+
+}
+
+label{
+    text-align: left;
+}
+
+.contact-tb tr td:first-child {
+    width: 300px;
+}
+
+.contact-tb tr td input {
+    border: #c6e3dc 1px solid;
+    background-color: #eee;
+
+}
+
+
+.wrap-time span {
+    font-size: 1.5rem;
+}
+
+
+.tellok{
+  
+    background-color: rgb(240, 213, 164);
+    border-radius: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 40%;
+   
+}
+
+
+#checkOk{
+    background-color:#F6BDA3;
+    border-radius: 30px;
+    padding:10px 20px ;
+    color: #fff;
+    font-weight: bold;
+}
+
+#checkOk:focus{
+    outline: none;
+}
+
+
+@media (max-width:640px) {
+
+    .contact-wrap {
+        width: 100%;
+    }
+
+    .payway{
+        padding-bottom:30px;
+        } 
+        
+}
+
+
+
+/* 聯絡資訊 */
+
+
+
+.map iframe {
+    width: 100%;
+   height: 500px;
+    border-radius: 20px;
+    border: 10px double rgb(104, 67, 67);
+}
+
+.traffic p{
+    line-height: 2rem;
+}
+
+.go{
+
+    line-height: 1rem;
+}
+
+.info {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+#phone{
+margin-left: 47px;
+}
+
+@media (max-width:991px){
+    .map iframe {
+       height: 300px;
+        
+    }
+}
+
+
+/* footer */
+
+footer{
+    background-color: rgb(80, 66, 66) ;
+    height: 60px;
+    margin-top: 60px;
+    margin-bottom: 0;
+    padding-top: 10px;
+}
+
+.footer-wrap{
+    text-align: center;
+}
+
+.footer-wrap p {
+    color: rgba(255, 255, 255, .6);
+    font-weight: 300;
+}
+svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+
+.walk{
+bottom:70px;
+width: 80px;
+right: 30px;
+opacity: .4;
+cursor: pointer;
+transition: .4s;
+}
+
+.walk:hover{
+    opacity: 1;
+}
+
+.walk img{
+    width: 100%;
+}
+
+@media (max-width:1300px){
+    .walk {
+        width: 50px;
+         
+     }
+}
+
+@media (max-width:640px){
+    .walk {
+       display: none;
+        
+    }
+}
